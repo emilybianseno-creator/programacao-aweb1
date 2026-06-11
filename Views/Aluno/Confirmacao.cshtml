@@ -1,0 +1,31 @@
+@model programacao_aweb1.Models.Aluno
+
+<h1 style="color:green">
+    Aluno cadastrado com sucesso!
+</h1>
+
+<p>
+    Nome: @Model.Nome
+</p>
+
+<p>
+    Email: @Model.Email
+</p>
+
+<p>
+    RA: @Model.RA
+</p>
+
+<p>
+    Curso: @Model.Curso
+</p>
+
+<p>
+    Data de Nascimento: @Model.DataNascimento.ToShortDateString()
+</p>
+
+<a asp-action="Cadastrar">
+    <button>
+        Cadastrar outro
+    </button>
+</a>

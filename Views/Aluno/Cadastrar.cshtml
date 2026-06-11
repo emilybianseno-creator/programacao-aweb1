@@ -1,0 +1,36 @@
+@model programacao_aweb1.Models.Aluno
+
+<h1>Cadastro de Aluno</h1>
+
+<form asp-action="Cadastrar" method="post">
+
+    <p>
+        Nome:
+        <input asp-for="Nome" />
+    </p>
+
+    <p>
+        Email:
+        <input asp-for="Email" />
+    </p>
+
+    <p>
+        RA:
+        <input asp-for="RA" />
+    </p>
+
+    <p>
+        Curso:
+        <input asp-for="Curso" />
+    </p>
+
+    <p>
+        Data de Nascimento:
+        <input asp-for="DataNascimento" type="date" />
+    </p>
+
+    <button type="submit">
+        Cadastrar
+    </button>
+
+</form>

@@ -1,16 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
+using programacao_aweb1.Models;
 
-namespace programacao_aweb.Controllers
+namespace programacao_aweb1.Controllers
 {
     public class AlunoController : Controller
     {
-    public IActionResult Index()
+        [HttpGet]
+        public IActionResult Cadastrar()
         {
-            ViewBag.Nome = "Emily";
-            ViewBag.Curso = "ADS";
-            ViewBag.Semestre = "1º Semestre";
-
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Cadastrar(Aluno aluno)
+        {
+            if (ModelState.IsValid)
+            {
+                return View("Confirmacao", aluno);
+            }
+
+            return View(aluno);
         }
     }
 }
