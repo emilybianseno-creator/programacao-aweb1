@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("programacao-aweb1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef66e4123d2496fc2973e220870288cc4b9979b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32dc6545755f4af7fbaaecbb55fdee0b9896aed4")]
 [assembly: System.Reflection.AssemblyProductAttribute("programacao-aweb1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("programacao-aweb1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

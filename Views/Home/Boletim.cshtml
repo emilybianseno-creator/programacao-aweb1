@@ -1,0 +1,43 @@
+@{
+    var disciplinas = ViewBag.Disciplinas as List<string>;
+    var notas = ViewBag.Notas as List<double>;
+
+    double soma = 0;
+}
+
+<h1>Boletim de Notas</h1>
+
+<table border="1">
+    <tr>
+        <th>Disciplina</th>
+        <th>Nota</th>
+        <th>Status</th>
+    </tr>
+
+    @for (int i = 0; i < disciplinas.Count; i++)
+    {
+        soma += notas[i];
+
+        <tr>
+            <td>@disciplinas[i]</td>
+            <td>@notas[i]</td>
+
+            <td>
+                @if (notas[i] >= 6)
+                {
+                    <span style="color:green">Aprovado</span>
+                }
+                else
+                {
+                    <span style="color:red">Reprovado</span>
+                }
+            </td>
+        </tr>
+    }
+
+    <tr>
+        <td colspan="3">
+            Média Geral: @(soma / notas.Count)
+        </td>
+    </tr>
+</table>
